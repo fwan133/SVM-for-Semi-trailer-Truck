@@ -16,7 +16,7 @@ The framework includes:
 - **Spatial–Temporal Fusion Articulation-Angle Estimation (AAE):** A camera-only method that robustly estimates the articulation angle between the tractor and trailer, even under occlusions or disturbances.
 - **Dynamic Image Concatenation (DIC):** Produces seamless BEV images by selecting the optimal image source for each pixel rather than relying on traditional seam-based stitching.
 
-![Framework Overview](./Teaser Figure.svg)
+![Framework Overview](./TeaserFigure.svg)
 *Figure: Overall framework of the proposed multi-camera SVM system for semi-trailer trucks.*
 
 ---
