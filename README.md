@@ -3,18 +3,21 @@
 A research project implementing a **multi-camera SVM framework** for semi-trailer trucks to support safe maneuvering of oversized goods in constrained urban environments.
 
 This repository complements the paper:  
-> *Title: Multi-Camera Surround View Monitoring for Semi-Trailer Trucks*  
+> *Title: Multi-camera Surround View Monitoring System for Oversized Semi-Trailer Trucks: Camera Placement Optimization and Dynamic Image Concatenation*  
 > *(Currently under review)*
 
 ---
 
 ## 🚚 Project Overview
-This project focuses on developing a **systematic and theoretically feasible framework** for SVM systems on semi-trailer trucks. The goal is to improve situational awareness and support safe operations such as transporting Modular Integrated Construction (MiC) modules in urban environments.
+This project focuses on developing a systematic and practical framework for SVM systems on semi-trailer trucks, aiming to generate high-fidelity Bird’s-Eye-View (BEV) images. The goal is to enhance situational awareness and support safe operations, such as transporting Modular Integrated Construction (MiC) modules in urban environments.
 
 The framework includes:
 - **Camera Placement Optimization (CPO):** Determines the optimal number and positions of fisheye cameras to maximize BEV image fidelity while minimizing hardware cost.
 - **Spatial–Temporal Fusion Articulation-Angle Estimation (AAE):** A camera-only method that robustly estimates the articulation angle between the tractor and trailer, even under occlusions or disturbances.
 - **Dynamic Image Concatenation (DIC):** Produces seamless BEV images by selecting the optimal image source for each pixel rather than relying on traditional seam-based stitching.
+
+![Framework Overview](./docs/Fig.5.svg)
+*Figure: Overall framework of the proposed multi-camera SVM system for semi-trailer trucks.*
 
 ---
 
@@ -35,18 +38,15 @@ The framework includes:
 
 ---
 
-## 📊 Evaluation
-The evaluation focuses on:
-- Accuracy of **articulation angle estimation**
-- Overall **BEV image quality**
-- **Computational efficiency** of the BEV pipeline
+## 📊 Simulation Results
+A demonstration of the simulation results can be viewed in the video below:
 
-### Real-Time Performance
-- Articulation angle estimation: **57.82 ms / frame**
-- BEV image generation: **7.94 ms / frame**
-- Achieved up to **17.3 FPS** in simulation
+▶️ [**Watch on YouTube**](https://youtu.be/gVBraPmdiUI) 
 
-> Future work aims to integrate GPU acceleration and real-world testing to further enhance performance.
+The video highlights:
+- Accuracy of articulation-angle estimation
+- Seamless and distortion-minimized BEV images
+- Real-time performance in simulated driving scenarios
 
 ---
 
@@ -58,27 +58,8 @@ The evaluation focuses on:
 
 ---
 
-## 📂 Repository Structure
-```
-├── docs/                  # Documentation and related manuscripts
-├── src/                   # Core source code for CPO, AAE, and DIC
-├── data/                  # Sample data and simulation settings
-├── results/               # Experimental results and visualizations
-└── README.md              # Project overview (this file)
-```
-
----
-
 ## 📜 Citation
 If you use this project in your research, please cite the paper (link will be provided after publication).
-
----
-
-## 📧 Contact
-For questions or collaborations, please contact:
-- **Lead Author:** [Your Name]  
-- **Email:** [your.email@example.com]  
-- **GitHub:** [Your GitHub Profile]
 
 ---
 
